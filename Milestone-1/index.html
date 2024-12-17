@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="resume">
+      <header>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <h1>Alsiba Ali</h1>
+        <p>Web Developer</p>
+        <p>Email: alishbaali@gmail.com | Phone: (123) 456-7890</p>
+      </header>
+
+      <main>
+        <section id="education" class="section">
+          <h2>
+            Education
+            <button class="toggle-btn" data-target="education-content">
+              Hide
+            </button>
+          </h2>
+          <div id="education-content">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>University of Technology, 2015-2019</p>
+          </div>
+        </section>
+
+        <section id="skills" class="section">
+          <h2>
+            Skills
+            <button class="toggle-btn" data-target="skills-content">
+              Hide
+            </button>
+          </h2>
+          <div id="skills-content">
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>TypeScript</li>
+              <li>React, Next</li>
+              <li>Node.js, Express</li>
+              <li>Git, GitHub</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="experience" class="section">
+          <h2>
+            Work Experience
+            <button class="toggle-btn" data-target="experience-content">
+              Hide
+            </button>
+          </h2>
+          <div id="experience-content">
+            <div class="job">
+              <h3>Senior Web Developer</h3>
+              <p>Tech Solutions Inc., 2019-Present</p>
+              <ul>
+                <li>
+                  Lead development of company's main product using React and
+                  Node.js
+                </li>
+                <li>Mentored junior developers and conducted code reviews</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3>Junior Web Developer</h3>
+              <p>StartUp Co., 2017-2019</p>
+              <ul>
+                <li>Developed and maintained client websites</li>
+                <li>
+                  Collaborated with design team to implement responsive designs
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
